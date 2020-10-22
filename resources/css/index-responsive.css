@@ -1,0 +1,468 @@
+/* General Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.section {
+    font-family: Assistant;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+  }
+
+/* Menu Section */
+.menu {
+    height: 50px;
+    position: absolute;
+    z-index: 10;
+    justify-self: flex-end;
+    align-self: flex-start;
+  }
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 95%;
+}
+
+li {
+    list-style: none;
+    margin: 0 5px;
+    font-size: 0.8rem;
+ }
+
+ li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+ }
+
+/* Header Background */
+.header {
+    height: 700px;
+    background-image: url(lake.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    font-size: 1.5rem;
+  }
+
+/* Title */
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+    margin: 0 30px;
+}
+
+.title h1 {
+    font-family: Sen;
+    font-size: 1.7rem;
+    margin-bottom: 60px;
+}
+
+.title span {
+    border-radius: 100px;
+    border: 2px solid whitesmoke;
+    padding: 2%;
+    font-size: 1.5rem;
+}
+
+.title span:hover {
+    color: rgb(8, 70, 44);
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+/* Concept Section */
+.concept {
+    background-color:rgb(83, 158, 127);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.concept p {
+    font-size: 0.9rem;
+    width: 80%;
+    padding-top: 2%;
+    text-align: justify;
+}
+
+/* Features Section */
+.feature-1, .feature-2, .feature-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    background-color: rgba(219, 215, 193, 0.986);
+    text-align: justify;
+  }
+  
+.feature-2 {
+    background-color: rgba(236, 170, 29, 0.719);
+  }
+  
+.feature-3 {
+    background-color: rgba(223, 121, 25, 0.295);
+  }
+
+.feature-1 span, .feature-2 span, .feature-3 span {
+    color:rgba(209, 121, 7, 0.986);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.feature-1 p, .feature-2 p, .feature-3 p {
+    font-size: 1.1rem;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* Testimonial Section*/
+.testimonials {
+  height: 1200px;
+  color: whitesmoke;
+  z-index: 5;
+  position: relative;
+}
+
+.background {
+  opacity: 0.8;
+  z-index: -1;
+  background-image: url(toast.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+img {
+  border-radius: 500px;
+  width: 200px;
+  margin-right: 2%;
+  margin-bottom: 5%;
+}
+
+.opinions {
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+}
+
+.opinion {
+  margin: 4%;
+  min-height: 200px;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.opinion span {
+  font-family: Bellota;
+  font-size: 1.2rem;
+  width: 90%;
+  padding: 1%;
+  margin: 0;
+  background-color:rgba(209, 121, 7, 0.568);
+}
+
+/* Contact Section */
+.contact {
+  background-color:rgba(209, 121, 7, 0.986);
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact h3 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.contact p {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.contact span {
+  font-weight: bold;
+  color:  rgba(219, 215, 193, 0.986);
+}
+
+.contact-info {
+ color: rgb(8, 70, 44);
+ font-weight: bold;
+ padding: 1%;
+ margin-top: 2%;
+}
+
+/* About */
+
+.about {
+  background-color: rgba(219, 215, 193, 0.986);
+  font-size: 1.2rem;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h3 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.about p {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.about span {
+  font-weight: bold;
+  color: rgba(209, 121, 7, 0.986);
+}
+
+
+/* Footer Section*/
+.footer {
+  background-color:rgb(8, 70, 44);
+  height: 50px;
+  color: whitesmoke;  
+  align-items: center;
+  justify-content: center;
+}
+
+  /* Mobile Styles: styles above!*/
+  @media only screen and (max-width: 500px) {
+  
+}
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 501px) and (max-width: 960px) {
+
+    li {
+        margin: 0 15px;
+        font-size: 1.3rem;
+    }
+
+    .title h1 {
+      font-size: 2rem;
+      }
+  
+    .title span {
+      font-size: 1.8rem;
+    }
+
+    .concept h2 {
+      font-size: 1.6rem; 
+    }
+
+    .concept p {
+      font-size: 1.1rem;
+      width: 90%;
+      line-height: 1.5;
+    }
+
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+      text-align: center;
+      padding: 0px;
+      margin: 0;
+    }
+   
+    .feature-1 span, .feature-2 span, .feature-3 span {
+      font-size: 1.4rem;
+    }
+    
+    .feature-1 p, .feature-2 p, .feature-3 p {
+      font-size: 1.3rem;
+      line-height: 1.5;
+    }
+
+    .contact,
+    .about {
+      width: 50%;
+    }
+
+    .contact {
+      font-size: 1.2rem;
+    }
+    
+    .contact h3 {
+      font-size: 1.3rem;
+    }
+    
+    .about {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+    
+    .about h3 {
+      font-size: 1.3rem;
+      margin: 10px;
+    }
+
+    .testimonials {
+      height: 900px;
+    }
+
+    .opinions {
+      width: 100%;
+    }
+
+    .opinion {
+      flex-wrap: nowrap;
+      margin: 0;
+    }
+
+    .opinion span {
+      font-size: 1.6rem;
+      width: 400px;
+      margin-left: 2%;
+      margin-bottom: 3%;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    /*.page {
+        width: 1200px;
+        margin: 0 auto;
+      }*/
+    
+    .menu {
+      height: 30px;
+    }
+
+    li {
+      margin: 0 15px;
+      font-size: 1.3rem;
+    }
+
+    .header {
+      height: 673px;
+    }
+    
+    .title h1 {
+      font-size: 3rem;
+    }
+    
+    .title span {
+      font-size: 2rem;
+    }
+
+    .concept {
+      order: 1;
+    }
+
+    .concept h2 {
+      font-size: 1.8rem;
+      margin-top: 10px;
+    }
+
+    .concept p {
+      font-size: 1.4rem;
+      line-height: 1.8;
+      width: 90%;
+      margin-bottom: 10px;
+    }
+
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+      width: 33.3%;
+      text-align: center;
+      line-height: 1.5;
+    }
+   
+    .feature-1 span, .feature-2 span, .feature-3 span {
+      font-size: 1.3rem;
+    }
+    
+    .feature-1 p, .feature-2 p, .feature-3 p {
+      font-size: 1rem;
+    }
+
+    .testimonials {
+      height: 900px;
+    }
+    
+    .opinions {
+      align-items: flex-end;
+      width: 100%;
+    }
+
+    .opinion {
+      flex-wrap: nowrap;
+      margin: 0;
+    }
+    
+    .opinion span {
+      font-size: 1.8rem;
+      width: 500px;
+      margin-left: 2%;
+    }
+
+    .Robin {
+      align-self: flex-start;
+    }
+
+    .contact,
+    .about {
+      width: 50%;
+      order: 2;
+    }
+  
+    .testimonial {
+      height: 1000px;
+      order: 3;
+    }
+
+    .contact {
+      font-size: 1.4rem;
+    }
+    
+    .contact h3 {
+      font-size: 1.5rem;
+    }
+    
+    .about {
+      font-size: 1.4rem;
+      line-height: 3rem;
+    }
+    
+    .about h3 {
+      font-size: 1.5rem;
+      justify-self: flex-start;
+    }
+    
+    .footer {
+      order: 4;
+    }
+  }
